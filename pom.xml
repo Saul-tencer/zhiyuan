@@ -24,6 +24,7 @@
         <google.guice>4.1.0</google.guice>
         <assertj.core.version>3.6.2</assertj.core.version>
         <awaitility.version>2.0.0</awaitility.version>
+        <db2.version>11.1.2</db2.version>
     </properties>
 
     <licenses>
@@ -137,6 +138,24 @@
                 <artifactId>awaitility</artifactId>
                 <version>${awaitility.version}</version>
                 <scope>test</scope>
+            </dependency>
+            <!-- https://mvnrepository.com/artifact/com.ibm.db2.jcc/db2jcc4 -->
+            <dependency>
+                <groupId>com.ibm.db2</groupId>
+                <artifactId>db2jcc4</artifactId>
+                <version>${db2.version}</version>
+            </dependency>
+            <!-- https://mvnrepository.com/artifact/com.typesafe.play/filters-helpers -->
+            <dependency>
+                <groupId>com.typesafe.play</groupId>
+                <artifactId>filters-helpers_2.12</artifactId>
+                <version>${play2.version}</version>
+            </dependency>
+            <!-- https://mvnrepository.com/artifact/com.typesafe.play/play-ws -->
+            <dependency>
+                <groupId>com.typesafe.play</groupId>
+                <artifactId>play-ws_2.12</artifactId>
+                <version>${play2.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
